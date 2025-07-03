@@ -3,7 +3,7 @@ import ctnLogo from "../../assets/ctn-logo.svg";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-2 items-center justify-between px-20 py-20">
+    <div className="grid grid-cols-2 items-center justify-between px-20 my-30">
       <img src={ctnLogo} className="w-88" alt="CTN Projects logo" />
       <div>
         <span className="text-4xl font-bold tex-center">

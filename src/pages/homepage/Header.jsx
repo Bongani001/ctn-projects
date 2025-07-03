@@ -1,7 +1,7 @@
 import React from "react";
 import headerBg from "../../assets/header-bg.png";
+import ExploreProductsButton from "../../components/ExploreProductsButton";
 
-// bg-[url(/src/assets/header-bg.png)]
 const Header = () => {
   return (
     <header className="relative w-full bg-cover bg-center bg-no-repeat">
@@ -20,12 +20,7 @@ const Header = () => {
           or upgrading your lab, we deliver reliable products backed by expert
           service and long-term value.
         </p>
-        <button
-          type="button"
-          className="bg-primary/90 text-white font-medium rounded hover:bg-transparent hover:text-primary border border-primary hover:cursor-pointer py-2 px-4 "
-        >
-          Explore All Products
-        </button>
+        <ExploreProductsButton />
       </div>
     </header>
   );
