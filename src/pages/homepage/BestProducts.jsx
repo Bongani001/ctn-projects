@@ -6,7 +6,7 @@ import ProductCard from "../../components/ProductCard";
 
 const BestProducts = () => {
   return (
-    <div className="bg-primary/50 rounded-lg grid grid-cols-3 gap-5 py-10 px-5 mx-20 my-30">
+    <div className="bg-primary/30 rounded-lg grid grid-cols-3 gap-5 py-10 px-5 mx-20 my-30">
       <div className="space-y-5">
         <h3 className="text-4xl font-extrabold">Our Best Selling Products</h3>
         <span className="block">
@@ -18,13 +18,10 @@ const BestProducts = () => {
 
       <ProductCard
         image={washableWireSupportedPanelFilter}
-        title="washable wire-supported panel filter"
+        title="Washable Wire-Supported Panel Filter"
       />
 
-      <ProductCard
-        image={washableWireSupportedPanelFilter}
-        title="washable wire-supported panel filter"
-      />
+      <ProductCard image={pocketFilter} title="Pocket Filter" />
     </div>
   );
 };
