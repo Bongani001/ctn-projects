@@ -1,7 +1,8 @@
 import React from "react";
-import Header from "./Header";
-import About from "./About";
-import BestProducts from "./BestProducts";
+import Header from "./pageSections/Header";
+import About from "./pageSections/About";
+import BestProducts from "./pageSections/BestProducts";
+import AirFilters from "./pageSections/AirFilters";
 
 const Homepage = () => {
   return (
@@ -9,6 +10,7 @@ const Homepage = () => {
       <Header />
       <About />
       <BestProducts />
+      <AirFilters />
     </>
   );
 };

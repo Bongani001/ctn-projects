@@ -1,6 +1,6 @@
 import React from "react";
-import headerBg from "../../assets/header-bg.png";
-import ExploreProductsButton from "../../components/ExploreProductsButton";
+import headerBg from "../../../assets/header-bg.png";
+import ExploreProductsButton from "../../../components/ExploreProductsButton";
 
 const Header = () => {
   return (

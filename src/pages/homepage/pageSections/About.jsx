@@ -1,5 +1,5 @@
 import React from "react";
-import ctnLogo from "../../assets/ctn-logo.svg";
+import ctnLogo from "../../../assets/ctn-logo.svg";
 
 const About = () => {
   return (
