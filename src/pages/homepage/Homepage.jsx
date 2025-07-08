@@ -4,6 +4,7 @@ import About from "./pageSections/About";
 import BestProducts from "./pageSections/BestProducts";
 import AirFilters from "./pageSections/AirFilters";
 import LabEquipment from "./pageSections/LabEquipment";
+import Testimonials from "./pageSections/Testimonials";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <BestProducts />
       <AirFilters />
       <LabEquipment />
+      <Testimonials />
     </>
   );
 };
