@@ -12,30 +12,33 @@ const AirFilters = () => {
         Air Filters
       </span>
 
-      <div className="flex justify-center gap-5 mb-10">
+      <div className="flex justify-center gap-20 mb-10">
         <span
           className={`font-semibold ${
-            airFiltersTab === "primaryAirFilters" &&
-            "text-primary !font-extrabold"
-          } text-lg hover:text-zinc-500 hover:cursor-pointer`}
+            airFiltersTab === "primaryAirFilters"
+              ? "text-primary !font-extrabold"
+              : "hover:text-zinc-500"
+          } text-lg hover:cursor-pointer`}
           onClick={() => setAirFiltersTab("primaryAirFilters")}
         >
           Primary Filters
         </span>
         <span
           className={`font-semibold ${
-            airFiltersTab === "secondaryAirFilters" &&
-            "text-primary !font-extrabold"
-          } text-lg hover:text-zinc-500 hover:cursor-pointer`}
+            airFiltersTab === "secondaryAirFilters"
+              ? "text-primary !font-extrabold"
+              : "hover:text-zinc-500"
+          } text-lg hover:cursor-pointer`}
           onClick={() => setAirFiltersTab("secondaryAirFilters")}
         >
           Secondary Filters
         </span>
         <span
           className={`font-semibold ${
-            airFiltersTab === "tertiaryAirFilters" &&
-            "text-primary !font-extrabold"
-          } text-lg hover:text-zinc-500 hover:cursor-pointer`}
+            airFiltersTab === "tertiaryAirFilters"
+              ? "text-primary !font-extrabold"
+              : "hover:text-zinc-500"
+          } text-lg hover:cursor-pointer`}
           onClick={() => setAirFiltersTab("tertiaryAirFilters")}
         >
           Tertiary Filters

@@ -3,6 +3,7 @@ import Header from "./pageSections/Header";
 import About from "./pageSections/About";
 import BestProducts from "./pageSections/BestProducts";
 import AirFilters from "./pageSections/AirFilters";
+import LabEquipment from "./pageSections/LabEquipment";
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <About />
       <BestProducts />
       <AirFilters />
+      <LabEquipment />
     </>
   );
 };
