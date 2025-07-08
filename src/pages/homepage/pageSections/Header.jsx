@@ -4,7 +4,7 @@ import ExploreProductsButton from "../../../components/ExploreProductsButton";
 
 const Header = () => {
   return (
-    <header className="relative w-full bg-cover bg-center bg-no-repeat">
+    <header className="relative w-full bg-cover bg-center bg-no-repeat pt-17">
       <img
         src={headerBg}
         className="absolute w-full h-full object-cover -z-1"
