@@ -5,8 +5,8 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary/30 space-y-10 px-20 pt-10">
-      <div className="grid grid-cols-4">
+    <footer className="bg-primary/30 space-y-10 px-5 md:px-20 pt-10">
+      <div className="grid grid-cols-2 space-y-5 space-x-5 sm:grid-cols-4">
         <img
           src={ctnLogo}
           className="place-self-start w-1/2"
@@ -39,11 +39,11 @@ const Footer = () => {
           <span>+27 60 113 4365</span>
         </div>
       </div>
-      <div className="flex justify-between">
-        <span className="text-sm">
+      <div className="sm:flex sm:justify-between">
+        <span className="block text-sm text-center">
           Copyright &copy; {new Date().getFullYear()} CTN Projects
         </span>
-        <span className="text-center text-sm flex items-center gap-1 pb-2">
+        <span className="text-center text-xs sm:text-sm flex items-center justify-center gap-1 pb-2">
           Made with
           <FaRegHeart />
           by At The Brain
