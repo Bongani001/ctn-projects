@@ -34,11 +34,13 @@ const Products = () => {
 
       {/* FILTERS */}
       {productTab === "filters" && (
-        <div className="mx-20">
+        <div className="mx-5 sm:mx-20">
           {/* PRIMARY AIR FILTERS */}
           <div className="mb-20">
-            <h2 className="text-2xl font-semibold mb-5">Primary Air Filters</h2>
-            <div className="grid grid-cols-3 gap-10">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-5">
+              Primary Air Filters
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
               {airFilters["primaryAirFilters"]?.map((airFilter) => (
                 <ProductCard
                   key={airFilter.id}
@@ -51,10 +53,10 @@ const Products = () => {
 
           {/* SECONDARY AIR FILTERS */}
           <div className="mb-20">
-            <h2 className="text-2xl font-semibold mb-5">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-5">
               Secondary Air Filters
             </h2>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
               {airFilters["secondaryAirFilters"]?.map((airFilter) => (
                 <ProductCard
                   key={airFilter.id}
@@ -67,10 +69,10 @@ const Products = () => {
 
           {/* TERTIARY AIR FILTERS */}
           <div className="mb-20">
-            <h2 className="text-2xl font-semibold mb-5">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-5">
               Tertiary Air Filters
             </h2>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
               {airFilters["tertiaryAirFilters"]?.map((airFilter) => (
                 <ProductCard
                   key={airFilter.id}
@@ -85,9 +87,9 @@ const Products = () => {
 
       {/* LAB EQUIPMENT */}
       {productTab === "labEquipments" && (
-        <div className="mb-20 mx-20">
+        <div className="mb-20 mx-5 sm:mx-20">
           <h2 className="text-2xl font-semibold mb-5">Lab Equipments</h2>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
             {airFilters["primaryAirFilters"]?.map((airFilter) => (
               <ProductCard
                 key={airFilter.id}
@@ -100,7 +102,7 @@ const Products = () => {
       )}
 
       {/* CONTACT US */}
-      <div className="grid grid-cols-2 gap-10 mx-20 my-20">
+      <div className="grid sm:grid-cols-2 gap-10 mx-5 sm:mx-20 my-20">
         <div className="">
           <h3 className="text-2xl font-semibold mb-5">Contact Us</h3>
           <p>

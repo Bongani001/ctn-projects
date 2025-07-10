@@ -10,7 +10,7 @@ const ProductCard = ({ image, title }) => {
         alt="Product"
       />
       <div className="bg-primary/50 text-white rounded-2xl flex items-center justify-between hover:bg-primary/50 hover:cursor-pointer p-4">
-        <span className="">{title}</span>
+        <span className="text-sm sm:text-base">{title}</span>
         <MdOutlineArrowOutward />
       </div>
     </div>

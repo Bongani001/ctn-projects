@@ -7,6 +7,7 @@ import Products from "./pages/products/Products";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import NotFound from "./pages/notFound/NotFound";
+
 function App() {
   return (
     <BrowserRouter>

@@ -1,15 +1,16 @@
 import React from "react";
-import labWorkers from "/src/assets/two-lab-workers.png";
+import homeAircon from "/src/assets/home-aircon.png";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
-    <div className="flex justify-between px-20 mt-50 mb-20">
+    <div className="flex flex-col-reverse sm:flex-row sm:justify-between px-5 sm:px-20 sm:mt-50 mb-20">
       <img
-        src={labWorkers}
-        className="w-[40%] rounded-2xl object-cover"
-        alt="Two Lab Workers"
+        src={homeAircon}
+        className="w-full sm:w-[40%] rounded-2xl object-cover mt-10 sm:mt-0"
+        alt="Aircon in a home"
       />
-      <div className="pt-10 px-24">
+      <div className="pt-10 sm:px-24">
         <h3 className="text-3xl font-extrabold mb-5">
           Still Searching For The Right Air Filters Or Lab Equipment?
         </h3>
@@ -22,9 +23,11 @@ const CallToAction = () => {
           Get in touch today for a free quote or expert advice.
         </p>
 
-        <button className="bg-primary/90 text-white font-medium rounded-lg hover:bg-transparent hover:text-primary border border-primary hover:cursor-pointer py-2 px-4">
-          Get A Free Quote
-        </button>
+        <Link to="/contact">
+          <button className="bg-primary/90 text-white font-medium rounded-lg hover:bg-transparent hover:text-primary border border-primary hover:cursor-pointer py-2 px-4">
+            Get A Free Quote
+          </button>
+        </Link>
       </div>
     </div>
   );

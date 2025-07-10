@@ -1,15 +1,20 @@
 import React from "react";
 import ctnLogo from "../../../assets/ctn-logo.svg";
+import labWorkers from "/src/assets/two-lab-workers.png";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-2 items-center justify-between px-20 my-30">
-      <img src={ctnLogo} className="w-88" alt="CTN Projects logo" />
-      <div>
-        <span className="text-4xl font-bold tex-center">
+    <div className="sm:grid grid-cols-2 sm:gap-5 justify-between px-5 sm:px-20 my-30">
+      {/* <img
+        src={ctnLogo}
+        className="hidden sm:block min-w-50 w-[50%] place-self-center"
+        alt="CTN Projects logo"
+      /> */}
+      <div className="flex-1">
+        <span className="text-2xl font-bold tex-center">
           About CTN Projects
         </span>
-        <div className="space-y-3 mt-4">
+        <div className="text-sm space-y-3 mt-4">
           <p>
             CTN Projects is a trusted supplier of air filtration and ventilation
             solutions, serving industries across Africa since 2019. From
@@ -30,6 +35,12 @@ const About = () => {
           </p>
         </div>
       </div>
+
+      <img
+        src={labWorkers}
+        className="rounded-2xl flex-1 h-full sm:-order-1 object-cover mt-10 sm:mt-0"
+        alt="Two Lab Workers"
+      />
     </div>
   );
 };

@@ -4,11 +4,12 @@ import ExploreProductsButton from "../../../components/ExploreProductsButton";
 
 const Header = () => {
   return (
-    <header className="relative w-full bg-cover bg-center bg-no-repeat pt-17">
+    <header className="relative w-full bg-cover bg-center bg-no-repeat pt-13 sm:pt-17">
       <img
         src={headerBg}
         className="absolute w-full h-full object-cover -z-1"
       ></img>
+
       <div className="space-y-8 md:w-1/2 px-5 py-10 md:py-35 md:px-20 z-10">
         <h1 className="text-primary text-2xl md:text-4xl font-extrabold">
           Reliable Air Filtration & Laboratory Equipments Across Africa

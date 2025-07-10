@@ -6,22 +6,26 @@ import ProductCard from "../../../components/ProductCard";
 
 const BestProducts = () => {
   return (
-    <div className="bg-primary/30 rounded-2xl grid grid-cols-3 gap-5 py-10 px-5 mx-20 my-30">
-      <div className="space-y-5">
-        <h3 className="text-4xl font-extrabold">Our Best Selling Products</h3>
-        <span className="block">
+    <div className="bg-primary/30 sm:rounded-2xl grid sm:grid-cols-3 gap-5 py-10 px-5 sm:mx-20 my-30">
+      <div className="space-y-2 sm:space-y-5">
+        <h3 className="text-2xl sm:text-4xl font-extrabold">
+          Our Best Selling Products
+        </h3>
+        <span className="block text-sm sm:text-base">
           Trusted by households and businesses alike for their durability and
           performance.
         </span>
         <ExploreProductsButton />
       </div>
 
-      <ProductCard
-        image={washableWireSupportedPanelFilter}
-        title="Washable Wire-Supported Panel Filter"
-      />
+      <div className="sm:col-span-2 grid sm:grid-cols-2 gap-5">
+        <ProductCard
+          image={washableWireSupportedPanelFilter}
+          title="Washable Wire-Supported Panel Filter"
+        />
 
-      <ProductCard image={pocketFilter} title="Pocket Filter" />
+        <ProductCard image={pocketFilter} title="Pocket Filter" />
+      </div>
     </div>
   );
 };

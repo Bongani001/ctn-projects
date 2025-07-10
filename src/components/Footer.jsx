@@ -19,10 +19,10 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="hover:text-primary">
-              <Link to="#">Products</Link>
+              <Link to="/products">Products</Link>
             </li>
             <li className="hover:text-primary">
-              <Link to="#">Contact Form</Link>
+              <Link to="/contact">Contact Form</Link>
             </li>
           </ul>
         </div>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <span className="text-lg font-semibold">CONTACT DETAILS</span>
-          <span>sales@ctnprojects.co.za</span>
+          <a href="mailto:sales@ctnprojects.co.za">sales@ctnprojects.co.za </a>
           <span>+27 60 113 4365</span>
         </div>
       </div>
