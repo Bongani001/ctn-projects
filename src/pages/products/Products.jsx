@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { airFilters } from "/src/data";
+import { airFilters, labEquipments } from "/src/data";
 import ProductCard from "../../components/ProductCard";
 
 const Products = () => {
@@ -90,7 +90,7 @@ const Products = () => {
         <div className="mb-20 mx-5 sm:mx-20">
           <h2 className="text-2xl font-semibold mb-5">Lab Equipments</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
-            {airFilters["primaryAirFilters"]?.map((airFilter) => (
+            {labEquipments?.map((airFilter) => (
               <ProductCard
                 key={airFilter.id}
                 image={airFilter.image}

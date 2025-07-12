@@ -1,5 +1,5 @@
 import React from "react";
-import headerBg from "../../../assets/header-bg2.png";
+import headerBg from "/header-bg2.png";
 import ExploreProductsButton from "../../../components/ExploreProductsButton";
 
 const Header = () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import chrisAvatar from "/src/assets/chris.png";
-import benjaminAvatar from "/src/assets/benjamin.png";
-import lillianAvatar from "/src/assets/lillian.png";
+import chrisAvatar from "/chris.png";
+import benjaminAvatar from "/benjamin.png";
+import lillianAvatar from "/lillian.png";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 

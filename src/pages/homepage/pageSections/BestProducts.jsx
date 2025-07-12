@@ -1,7 +1,7 @@
 import React from "react";
 import ExploreProductsButton from "../../../components/ExploreProductsButton";
-import pocketFilter from "../../../assets/pocket-filter.png";
-import washableWireSupportedPanelFilter from "../../../assets/washable-wire-supported-panel-filter.png";
+import pocketFilter from "/pocket-filter.png";
+import washableWireSupportedPanelFilter from "/washable-wire-supported-panel-filter.png";
 import ProductCard from "../../../components/ProductCard";
 
 const BestProducts = () => {

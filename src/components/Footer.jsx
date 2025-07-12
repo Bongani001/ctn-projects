@@ -1,5 +1,5 @@
 import React from "react";
-import ctnLogo from "../assets/ctn-logo.svg";
+import ctnLogo from "/ctn-logo.svg";
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 

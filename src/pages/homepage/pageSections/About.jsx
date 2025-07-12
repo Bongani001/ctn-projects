@@ -1,6 +1,6 @@
 import React from "react";
-import ctnLogo from "../../../assets/ctn-logo.svg";
-import labWorkers from "/src/assets/two-lab-workers.png";
+import ctnLogo from "/ctn-logo.svg";
+import labWorkers from "/two-lab-workers.png";
 
 const About = () => {
   return (

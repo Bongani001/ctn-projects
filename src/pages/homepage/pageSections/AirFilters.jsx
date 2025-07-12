@@ -5,7 +5,7 @@ import ExploreProductsButton from "../../../components/ExploreProductsButton";
 
 const AirFilters = () => {
   const [airFiltersTab, setAirFiltersTab] = useState("primaryAirFilters");
-  console.log(airFilters[airFiltersTab]);
+
   return (
     <div className="px-5 sm:px-20 mb-20">
       <span className="block text-xl sm:text-2xl text-center font-extrabold pb-10">

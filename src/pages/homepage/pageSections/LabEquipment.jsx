@@ -1,7 +1,7 @@
 import React from "react";
-import { airFilters } from "/src/data";
 import ProductCard from "../../../components/ProductCard";
 import ExploreProductsButton from "../../../components/ExploreProductsButton";
+import { labEquipments } from "../../../data";
 
 const LabEquipment = () => {
   return (
@@ -11,7 +11,7 @@ const LabEquipment = () => {
       </span>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-10">
-        {airFilters["primaryAirFilters"]?.map((airFilter) => (
+        {labEquipments?.map((airFilter) => (
           <ProductCard
             key={airFilter.id}
             image={airFilter.image}

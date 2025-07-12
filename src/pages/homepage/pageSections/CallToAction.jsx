@@ -1,5 +1,5 @@
 import React from "react";
-import homeAircon from "/src/assets/home-aircon.png";
+import homeAircon from "/home-aircon.png";
 import { Link } from "react-router-dom";
 
 const CallToAction = () => {

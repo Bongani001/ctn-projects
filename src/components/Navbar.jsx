@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ctnLogo from "../assets/ctn-logo.svg";
+import ctnLogo from "/ctn-logo.svg";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
