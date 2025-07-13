@@ -3,6 +3,7 @@ import ctnLogo from "/ctn-logo.svg";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +41,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="cursor-pointer hover:text-primary">
-            <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
+            <HashLink smooth to="/#about" onClick={() => setIsOpen(!isOpen)}>
               About Us
-            </Link>
+            </HashLink>
           </li>
           <li className="cursor-pointer hover:text-primary">
             <Link to="/products" onClick={() => setIsOpen(!isOpen)}>
@@ -56,13 +57,16 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      {/* WIDE SCREEN NAV */}
+
+      {/* DESKTOP SCREEN NAV */}
       <ul className="hidden sm:flex items-center gap-5">
         <li className="cursor-pointer hover:text-primary">
           <Link to="/">Home</Link>
         </li>
         <li className="cursor-pointer hover:text-primary">
-          <Link to="/about">About Us</Link>
+          <HashLink smooth to="/#about">
+            About Us
+          </HashLink>
         </li>
         <li className="cursor-pointer hover:text-primary">
           <Link to="/products">Products</Link>

@@ -11,6 +11,7 @@ const Products = () => {
 
   return (
     <div className="pt-17">
+      {/* EQUIPMENT TABS */}
       <div className="bg-zinc-100 rounded-lg place-self-center space-x-5 px-4 py-2 my-10">
         <span
           className={`${

@@ -10,7 +10,7 @@ const LabEquipment = () => {
         Laboratory Equipments
       </span>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-1 sm:gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-10">
         {labEquipments?.map((airFilter) => (
           <ProductCard
             key={airFilter.id}

@@ -4,7 +4,10 @@ import labWorkers from "/two-lab-workers.png";
 
 const About = () => {
   return (
-    <div className="sm:grid grid-cols-2 sm:gap-5 justify-between px-5 sm:px-20 my-30">
+    <div
+      id="about"
+      className="sm:grid grid-cols-2 sm:gap-5 justify-between px-5 md:px-20 my-30 scroll-mt-20"
+    >
       {/* <img
         src={ctnLogo}
         className="hidden sm:block min-w-50 w-[50%] place-self-center"
@@ -14,7 +17,7 @@ const About = () => {
         <span className="text-2xl font-bold tex-center">
           About CTN Projects
         </span>
-        <div className="text-sm space-y-3 mt-4">
+        <div className="text-sm sm:text-base space-y-3 mt-4">
           <p>
             CTN Projects is a trusted supplier of air filtration and ventilation
             solutions, serving industries across Africa since 2019. From
