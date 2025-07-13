@@ -11,7 +11,7 @@ const Products = () => {
 
   return (
     <div className="pt-17">
-      {/* EQUIPMENT TABS */}
+      {/* PRODUCT TABS */}
       <div className="bg-zinc-100 rounded-lg place-self-center space-x-5 px-4 py-2 my-10">
         <span
           className={`${
@@ -42,11 +42,12 @@ const Products = () => {
               Primary Air Filters
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
-              {airFilters["primaryAirFilters"]?.map((airFilter) => (
+              {airFilters["primary"]?.map((airFilter) => (
                 <ProductCard
                   key={airFilter.id}
                   image={airFilter.image}
                   title={airFilter.title}
+                  file={`/files/airFilters/primary/` + airFilter.pdf}
                 />
               ))}
             </div>
@@ -58,11 +59,12 @@ const Products = () => {
               Secondary Air Filters
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
-              {airFilters["secondaryAirFilters"]?.map((airFilter) => (
+              {airFilters["secondary"]?.map((airFilter) => (
                 <ProductCard
                   key={airFilter.id}
                   image={airFilter.image}
                   title={airFilter.title}
+                  file={`/files/airFilters/secondary/` + airFilter.pdf}
                 />
               ))}
             </div>
@@ -74,11 +76,12 @@ const Products = () => {
               Tertiary Air Filters
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
-              {airFilters["tertiaryAirFilters"]?.map((airFilter) => (
+              {airFilters["tertiary"]?.map((airFilter) => (
                 <ProductCard
                   key={airFilter.id}
                   image={airFilter.image}
                   title={airFilter.title}
+                  file={`/files/airFilters/tertiary/` + airFilter.pdf}
                 />
               ))}
             </div>
@@ -91,11 +94,12 @@ const Products = () => {
         <div className="mb-20 mx-5 sm:mx-20">
           <h2 className="text-2xl font-semibold mb-5">Lab Equipments</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
-            {labEquipments?.map((airFilter) => (
+            {labEquipments?.map((equipment) => (
               <ProductCard
-                key={airFilter.id}
-                image={airFilter.image}
-                title={airFilter.title}
+                key={equipment.id}
+                image={equipment.image}
+                title={equipment.title}
+                file={`/files/labEquipment/` + equipment.pdf}
               />
             ))}
           </div>

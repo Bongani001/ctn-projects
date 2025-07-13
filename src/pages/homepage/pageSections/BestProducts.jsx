@@ -2,6 +2,7 @@ import React from "react";
 import ExploreProductsButton from "../../../components/ExploreProductsButton";
 import pocketFilter from "/pocket-filter.png";
 import washableWireSupportedPanelFilter from "/washable-wire-supported-panel-filter.png";
+import biologicalSafetyCabinet from "/biological-safety-cabinet.png";
 import ProductCard from "../../../components/ProductCard";
 
 const BestProducts = () => {
@@ -24,25 +25,23 @@ const BestProducts = () => {
           <ProductCard
             image={washableWireSupportedPanelFilter}
             title="Washable Wire-Supported Panel Filter"
+            file="/files/airFilters/primary/washable-wire-supported-panel-filter.pdf"
           />
 
-          <ProductCard image={pocketFilter} title="Pocket Filter" />
+          <ProductCard
+            image={pocketFilter}
+            title="Pocket Filter"
+            file="/files/airFilters/secondary/pocket-filter.pdf"
+          />
         </div>
 
         {/* MOBILE VIEW CAROUSEL */}
         <div className="md:hidden flex gap-5 !overflow-x-auto no-scrollbar mt-5 ml-5">
           <div>
             <ProductCard
-              image={washableWireSupportedPanelFilter}
-              title="Washable Wire-Supported Panel Filter"
-              imgClassName={"min-w-52"}
-            />
-          </div>
-
-          <div>
-            <ProductCard
               image={pocketFilter}
               title="Pocket Filter"
+              file="/files/airFilters/secondary/pocket-filter.pdf"
               imgClassName={"min-w-52"}
             />
           </div>
@@ -51,6 +50,16 @@ const BestProducts = () => {
             <ProductCard
               image={washableWireSupportedPanelFilter}
               title="Washable Wire-Supported Panel Filter"
+              file="/files/airFilters/primary/washable-wire-supported-panel-filter.pdf"
+              imgClassName={"min-w-52"}
+            />
+          </div>
+
+          <div>
+            <ProductCard
+              image={biologicalSafetyCabinet}
+              title="Biological Safety Cabinet"
+              file="/files/labEquipment/biological-safety-cabinet.pdf"
               imgClassName={"min-w-52"}
             />
           </div>

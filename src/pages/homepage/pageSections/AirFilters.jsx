@@ -5,7 +5,7 @@ import ExploreProductsButton from "../../../components/ExploreProductsButton";
 import { HashLink } from "react-router-hash-link";
 
 const AirFilters = () => {
-  const [airFiltersTab, setAirFiltersTab] = useState("primaryAirFilters");
+  const [airFiltersTab, setAirFiltersTab] = useState("primary");
 
   return (
     <div id="airFilters" className="relative px-5 md:px-20 mb-20">
@@ -18,11 +18,11 @@ const AirFilters = () => {
           <HashLink smooth to="#airFilters">
             <span
               className={`font-semibold ${
-                airFiltersTab === "primaryAirFilters"
+                airFiltersTab === "primary"
                   ? "text-primary !font-extrabold"
                   : "hover:text-zinc-500"
               } sm:text-lg hover:cursor-pointer`}
-              onClick={() => setAirFiltersTab("primaryAirFilters")}
+              onClick={() => setAirFiltersTab("primary")}
             >
               Primary
             </span>
@@ -31,11 +31,11 @@ const AirFilters = () => {
           <HashLink smooth to="#airFilters">
             <span
               className={`font-semibold ${
-                airFiltersTab === "secondaryAirFilters"
+                airFiltersTab === "secondary"
                   ? "text-primary !font-extrabold"
                   : "hover:text-zinc-500"
               } sm:text-lg hover:cursor-pointer`}
-              onClick={() => setAirFiltersTab("secondaryAirFilters")}
+              onClick={() => setAirFiltersTab("secondary")}
             >
               Secondary
             </span>
@@ -44,11 +44,11 @@ const AirFilters = () => {
           <HashLink smooth to="#airFilters">
             <span
               className={`font-semibold ${
-                airFiltersTab === "tertiaryAirFilters"
+                airFiltersTab === "tertiary"
                   ? "text-primary !font-extrabold"
                   : "hover:text-zinc-500"
               } sm:text-lg hover:cursor-pointer`}
-              onClick={() => setAirFiltersTab("tertiaryAirFilters")}
+              onClick={() => setAirFiltersTab("tertiary")}
             >
               Tertiary
             </span>
@@ -62,7 +62,7 @@ const AirFilters = () => {
             key={airFilter.id}
             image={airFilter.image}
             title={airFilter.title}
-            // imgClassName={"max-h-82"}
+            file={`/files/airFilters/${airFiltersTab}/` + airFilter.pdf}
           />
         ))}
       </div>

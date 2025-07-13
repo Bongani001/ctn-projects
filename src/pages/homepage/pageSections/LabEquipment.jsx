@@ -11,11 +11,12 @@ const LabEquipment = () => {
       </span>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-10">
-        {labEquipments?.map((airFilter) => (
+        {labEquipments?.map((equipment) => (
           <ProductCard
-            key={airFilter.id}
-            image={airFilter.image}
-            title={airFilter.title}
+            key={equipment.id}
+            image={equipment.image}
+            title={equipment.title}
+            file={`/files/labEquipment/` + equipment.pdf}
           />
         ))}
       </div>
