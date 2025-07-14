@@ -26,6 +26,7 @@ const Testimonials = () => {
         customers.
       </p>
 
+      {/* DESKTOP VIEW */}
       <div className="hidden md:grid md:grid-cols-3 gap-4 md:gap-1 lg:gap-10 md:absolute left-0 md:-bottom-2/4 lg:-bottom-1/3 sm:px-5 mt-5 md:mt-0">
         <div className="bg-[#849EAD] text-white rounded-2xl p-5">
           <div className="flex gap-3">
@@ -105,7 +106,7 @@ const Testimonials = () => {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"auto"}
+          slidesPerView={1}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -118,7 +119,7 @@ const Testimonials = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="bg-[#849EAD] text-white rounded-2xl p-5 pb-6">
+            <div className="bg-[#849EAD] text-white rounded-2xl p-5">
               <div className="flex gap-3">
                 <img
                   src={chrisAvatar}
@@ -144,7 +145,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-[#849EAD] text-white rounded-2xl p-5 pb-10">
+            <div className="bg-[#849EAD] text-white rounded-2xl p-5">
               <div className="flex gap-3">
                 <img
                   src={benjaminAvatar}
@@ -168,8 +169,8 @@ const Testimonials = () => {
               </p>
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-[#849EAD] text-white rounded-2xl p-5 pb-">
+          <SwiperSlide className="h-full">
+            <div className="bg-[#849EAD] text-white rounded-2xl p-5">
               <div className="flex gap-3">
                 <img
                   src={lillianAvatar}
@@ -194,6 +195,7 @@ const Testimonials = () => {
               </p>
             </div>
           </SwiperSlide>
+          <div className="h-8"></div>
         </Swiper>
       </div>
     </div>

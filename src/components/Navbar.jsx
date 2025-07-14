@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white/80 backdrop-blur-sm shadow fixed w-full flex items-center justify-between px-5 py-2 md:px-20 z-40">
       <Link to="/">
-        <img src={ctnLogo} className="w-14 md:w-18" alt="CTN Projects logo" />
+        <img src={ctnLogo} className="w-12 md:w-14" alt="CTN Projects logo" />
       </Link>
 
       {/* SMALL SCREEN HAMBURGER */}
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {/* DESKTOP SCREEN NAV */}
-      <ul className="hidden sm:flex items-center gap-5">
+      <ul className="hidden text-sm font-medium sm:flex items-center gap-5">
         <li className="cursor-pointer hover:text-primary">
           <Link to="/">Home</Link>
         </li>
