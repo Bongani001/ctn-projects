@@ -12,9 +12,9 @@ const Products = () => {
 
   return (
     <div className="pt-17">
-      <div id="products" className="relative">
+      <div id="products" className="relative scroll-mt-12">
         {/* PRODUCT TABS */}
-        <div className="sticky top-18 bg-zinc-100 rounded-lg place-self-center space-x-5 px-4 py-2 my-10">
+        <div className="sticky top-18 bg-zinc-100 rounded-lg place-self-center space-x-5 px-4 py-2 mb-10 mt-5">
           <HashLink smooth to="#products">
             <span
               className={`${
