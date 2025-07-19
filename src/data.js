@@ -124,7 +124,7 @@ export const bestProducts = [
     title: "Washable Wire-Supported Panel Filter",
     name: "washable-wire-supported-panel-filter",
     image: "/washable-wire-supported-panel-filter.png",
-    pdf: "washable-wire-supported-panel-filter.pdf",
+    pdf: "/files/airFilters/primary/washable-wire-supported-panel-filter.pdf",
     airFlowImg:
       "/files/airFilters/primary/washable-wire-supported-panel-filter-airflow.png",
     specificationsImg:
@@ -144,7 +144,7 @@ export const bestProducts = [
     title: "Pocket Filter",
     name: "pocket-filter",
     image: "/pocket-filter.png",
-    pdf: "pocket-filter.pdf",
+    pdf: "/files/airFilters/secondary/pocket-filter.pdf",
     airFlowImg: "/files/airFilters/secondary/pocketFilterAirFlow.png",
     specificationsImg:
       "/files/airFilters/secondary/pocketFilterSpecifications.png",

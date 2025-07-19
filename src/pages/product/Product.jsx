@@ -6,11 +6,14 @@ import { HashLink } from "react-router-hash-link";
 import { bestProducts } from "../../data";
 import { useLocation } from "react-router-dom";
 import { TbRotateClockwise2 } from "react-icons/tb";
+import { AiFillProduct } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // get the name of the product from the web address
   const address = useLocation().pathname.split("/")[2];
 
   useEffect(() => {
@@ -22,11 +25,7 @@ const Product = () => {
         setLoading(false);
       }
     });
-    console.log(address);
   }, [address]);
-
-  //   const address = useLocation().pathname.split("/")[2];
-  //   console.log(useLocation().pathname.split("/")[2]);
 
   return (
     <div className="pt-17 ">
@@ -37,19 +36,28 @@ const Product = () => {
         </div>
       ) : (
         <>
-          <div className="md:flex space-y-2 md:space-y-0 justify-between mt-3 mb-5 mx-5 sm:mx-20">
-            <h2 className="text-2xl font-semibold">{product.title}</h2>
-            <button
-              className="bg-transparent text-primary font-medium rounded-lg flex items-center gap-1 hover:bg-primary hover:cursor-pointer hover:text-white border border-primary py-2 px-4"
-              type="button"
+          <div className="md:flex space-y-2 md:space-y-0 md:justify-between mt-3 mb-5 mx-5 md:mx-20">
+            <h2 className="flex items-center gap-2">
+              <span className="text-primary">
+                <AiFillProduct size={30} />
+              </span>
+              <span className="text-xl sm:text-2xl font-semibold">
+                {product.title}
+              </span>
+            </h2>
+            <Link
+              to={product.pdf}
+              target="_blank"
+              className="bg-transparent text-primary font-medium rounded-lg flex items-center place-self-start gap-1 hover:bg-primary hover:cursor-pointer hover:text-white border border-primary py-2 px-4"
+              download
             >
               <MdDownload className="w-4 h-4" />
-              <span>Download Product Information</span>
-            </button>
+              <span className="text-sm">Download Product Information</span>
+            </Link>
           </div>
 
-          <div className="md:grid grid-cols-2 gap-10 mx-5 sm:mx-20">
-            <div className="bg-zinc-200 self-start w-full sm:w-4/5 rounded-2xl p-1">
+          <div className="md:grid grid-cols-2 gap-10 mx-5 md:mx-20">
+            <div className="bg-zinc-200 self-start w-full :w-4/5 rounded-2xl p-1">
               <img
                 src={product.image}
                 className={`max-h-[300px] place-self-center py-5 px-3 `}
@@ -63,9 +71,10 @@ const Product = () => {
               </div>
             </div>
 
+            {/* FEATURES */}
             <div className="mt-5 md:mt-0">
               <div>
-                <h3 className="text-2xl font-semibold">Features</h3>
+                <h3 className="text-xl sm:text-2xl font-semibold">Features</h3>
 
                 <ul className="">
                   {product.features?.map((feature, index) => (
@@ -83,12 +92,11 @@ const Product = () => {
 
               {product.airFlowImg && (
                 <div className="mt-5">
-                  <h3 className="text-2xl font-semibold mb-2">
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-2">
                     Curve of AirFlow and Resistance
                   </h3>
 
                   <img
-                    //   src="/files/airFilters/secondary/pocketFilterAirFlow.png"
                     src={product.airFlowImg}
                     className={`max-h-[300px] w-full`}
                     alt="Product"
@@ -106,9 +114,12 @@ const Product = () => {
               </HashLink>
             </div>
           </div>
+
           {/* SPECIFICATIONS */}
-          <div className="mt-20 mx-5 sm:mx-20">
-            <h2 className="text-2xl font-semibold mb-5">Specifications</h2>
+          <div className="mt-20 mx-1 md:mx-20">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-5">
+              Specifications
+            </h2>
             <img
               src={product.specificationsImg}
               className={`w-full`}

@@ -127,11 +127,12 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="bg-[#849EAD] text-white rounded-2xl p-5">
               <div className="flex gap-3">
-                <img
+                {/* <img
                   src={chrisAvatar}
                   className="rounded-full h-12 w-12"
                   alt="User Avatar"
-                />
+                /> */}
+                <FaCircleUser fill="#023b60" className="w-12 h-12" />
                 <div>
                   <span className="font-bold">Melisa</span>
                   <div className="flex text-yellow-500">
@@ -153,11 +154,12 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="bg-[#849EAD] text-white rounded-2xl p-5">
               <div className="flex gap-3">
-                <img
+                {/* <img
                   src={benjaminAvatar}
                   className="rounded-full h-12 w-12"
                   alt="User Avatar"
-                />
+                /> */}
+                <FaCircleUser fill="#023b60" className="w-12 h-12" />
                 <div>
                   <span className="font-bold">Hazel</span>
                   <div className="flex text-yellow-500">
@@ -178,11 +180,12 @@ const Testimonials = () => {
           <SwiperSlide className="h-full">
             <div className="bg-[#849EAD] text-white rounded-2xl p-5">
               <div className="flex gap-3">
-                <img
+                {/* <img
                   src={lillianAvatar}
                   className="rounded-full h-12 w-12"
                   alt="User Avatar"
-                />
+                /> */}
+                <FaCircleUser fill="#023b60" className="w-12 h-12" />
                 <div>
                   <span className="font-bold">Ricardo</span>
                   <div className="flex text-yellow-500">

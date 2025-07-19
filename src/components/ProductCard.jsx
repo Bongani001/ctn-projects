@@ -26,10 +26,12 @@ const ProductCard = ({ image, title, className, imgClassName, file, link }) => {
       {link ? (
         <Link
           to={link}
-          className="bg-primary/50 text-white rounded-2xl flex items-center justify-between hover:bg-primary/50 hover:cursor-pointer p-4"
+          className="bg-primary/50 text-white rounded-2xl flex items-center justify-between gap-1 hover:bg-primary/50 hover:cursor-pointer p-4"
         >
           <span className="text-sm sm:text-base">{title}</span>
-          <MdOutlineArrowOutward />
+          <span>
+            <MdOutlineArrowOutward />
+          </span>
         </Link>
       ) : (
         <div className="bg-primary/50 text-white rounded-2xl p-4">
