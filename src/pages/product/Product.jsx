@@ -126,6 +126,7 @@ const Product = () => {
               alt="Product"
             />
           </div>
+
           {/* CONTACT */}
           <Contact />
         </>

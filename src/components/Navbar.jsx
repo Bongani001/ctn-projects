@@ -41,9 +41,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="cursor-pointer hover:text-primary">
-            <HashLink smooth to="/#about" onClick={() => setIsOpen(!isOpen)}>
+            <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
               About Us
-            </HashLink>
+            </Link>
           </li>
           <li className="cursor-pointer hover:text-primary">
             <Link to="/products" onClick={() => setIsOpen(!isOpen)}>
@@ -64,7 +64,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="cursor-pointer hover:text-primary">
-          <HashLink smooth to="/#about">
+          <HashLink smooth to="/about">
             About Us
           </HashLink>
         </li>
