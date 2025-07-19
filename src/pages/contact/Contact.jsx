@@ -39,7 +39,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid sm:grid-cols-2 gap-10 pt-30 mx-5 sm:mx-20 mb-20">
+    <div
+      id="contact"
+      className="grid sm:grid-cols-2 gap-10 pt-30 mx-5 sm:mx-20 mb-20"
+    >
       <Toaster position="top-center" />
       <div className="">
         <h3 className="text-2xl font-semibold mb-5">Contact Us</h3>

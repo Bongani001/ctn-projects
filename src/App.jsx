@@ -7,6 +7,7 @@ import Products from "./pages/products/Products";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import NotFound from "./pages/notFound/NotFound";
+import Product from "./pages/product/Product";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/products/:productName" element={<Product />} />
       </Routes>
       <Footer />
     </BrowserRouter>

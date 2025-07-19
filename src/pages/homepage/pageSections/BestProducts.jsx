@@ -19,19 +19,21 @@ const BestProducts = () => {
         <ExploreProductsButton />
       </div>
 
-      {/* DESKTOP VIEW */}
       <div className="sm:col-span-2">
+        {/* DESKTOP VIEW */}
         <div className="hidden md:grid md:grid-cols-2 md:gap-5">
           <ProductCard
             image={washableWireSupportedPanelFilter}
             title="Washable Wire-Supported Panel Filter"
             file="/files/airFilters/primary/washable-wire-supported-panel-filter.pdf"
+            link="/products/washable-wire-supported-panel-filter"
           />
 
           <ProductCard
             image={pocketFilter}
             title="Pocket Filter"
             file="/files/airFilters/secondary/pocket-filter.pdf"
+            link="/products/pocket-filter"
           />
         </div>
 
@@ -42,6 +44,7 @@ const BestProducts = () => {
               image={pocketFilter}
               title="Pocket Filter"
               file="/files/airFilters/secondary/pocket-filter.pdf"
+              link="/products/pocket-filter"
               imgClassName={"min-w-52"}
             />
           </div>
@@ -51,6 +54,7 @@ const BestProducts = () => {
               image={washableWireSupportedPanelFilter}
               title="Washable Wire-Supported Panel Filter"
               file="/files/airFilters/primary/washable-wire-supported-panel-filter.pdf"
+              link="/products/washable-wire-supported-panel-filter"
               imgClassName={"min-w-52"}
             />
           </div>
@@ -60,6 +64,7 @@ const BestProducts = () => {
               image={biologicalSafetyCabinet}
               title="Biological Safety Cabinet"
               file="/files/labEquipment/biological-safety-cabinet.pdf"
+              link="/products/biological-safety-cabinet"
               imgClassName={"min-w-52"}
             />
           </div>
