@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { airFilters, labEquipments } from "/src/data";
 import ProductCard from "../../components/ProductCard";
 import { HashLink } from "react-router-hash-link";
+import Contact from "../contact/Contact";
 
 const Products = () => {
   const [productTab, setProductTab] = useState("filters");
@@ -97,7 +98,7 @@ const Products = () => {
 
         {/* LAB EQUIPMENT */}
         {productTab === "labEquipments" && (
-          <div className="mb-20 mx-5 sm:mx-20">
+          <div className="mx-5 sm:mx-20">
             <h2 className="text-2xl font-semibold mb-5">Lab Equipments</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
               {labEquipments?.map((equipment) => (
@@ -114,7 +115,7 @@ const Products = () => {
       </div>
 
       {/* CONTACT US */}
-      <div className="grid sm:grid-cols-2 gap-10 mx-5 sm:mx-20 my-20">
+      {/* <div className="grid sm:grid-cols-2 gap-10 mx-5 sm:mx-20 my-20">
         <div className="">
           <h3 className="text-2xl font-semibold mb-5">Contact Us</h3>
           <p>
@@ -172,6 +173,9 @@ const Products = () => {
             </button>
           </form>
         </div>
+      </div> */}
+      <div className="-mt-20">
+        <Contact />
       </div>
     </div>
   );

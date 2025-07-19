@@ -1,12 +1,46 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { TbRotateClockwise2 } from "react-icons/tb";
+import toast, { Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const submitEmail = (e) => {
+    e.preventDefault();
+
+    // console.log("this email");
+    // console.log(e.target);
+
+    // console.log(import.meta.env.VITE_TEMPLATE_ID);
+    setLoading(true);
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then((res) => {
+        toast.success("Email Sent!");
+      })
+      .catch((err) => {
+        toast.error("Something went wrong, please try again later.");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
   return (
     <div className="grid sm:grid-cols-2 gap-10 pt-30 mx-5 sm:mx-20 mb-20">
+      <Toaster position="top-center" />
       <div className="">
         <h3 className="text-2xl font-semibold mb-5">Contact Us</h3>
         <p>
@@ -16,12 +50,14 @@ const Contact = () => {
         </p>
       </div>
       <div>
-        <form action="" className="space-y-5">
+        <form action="" className="space-y-5" onSubmit={submitEmail}>
           <input
             type="text"
             name="name"
             placeholder="Business Name"
             className="bg-zinc-200 rounded-xl w-full p-3 focus:outline-none"
+            // value={formData.name}
+            // onChange={handleInputChange}
             required
           />
 
@@ -30,14 +66,18 @@ const Contact = () => {
             name="phone"
             placeholder="Phone Number"
             className="bg-zinc-200 rounded-xl w-full p-3 focus:outline-none"
+            // value={formData.phone}
+            // onChange={handleInputChange}
             required
           />
 
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="Email Address"
             className="bg-zinc-200 rounded-xl w-full p-3 focus:outline-none"
+            // value={formData.email}
+            // onChange={handleInputChange}
             required
           />
 
@@ -46,6 +86,8 @@ const Contact = () => {
             name="product"
             placeholder="Product Required"
             className="bg-zinc-200 rounded-xl w-full p-3 focus:outline-none"
+            // value={formData.product}
+            // onChange={handleInputChange}
             required
           />
 
@@ -54,14 +96,22 @@ const Contact = () => {
             placeholder="Message (Optional)"
             className="bg-zinc-200 rounded-xl w-full p-3 focus:outline-none"
             rows={"5"}
+            // value={formData.message}
+            // onChange={handleInputChange}
           ></textarea>
 
-          <button
-            type="submit"
-            className="bg-primary/90 text-white lg:w-full font-medium rounded-lg hover:bg-transparent hover:text-primary border border-primary hover:cursor-pointer py-2 px-4"
-          >
-            Get A Free Quote
-          </button>
+          {loading ? (
+            <div className="bg-primary/90 min-w-40 place-self-start place-items-center text-white lg:w-full font-medium rounded-lg border border-primary py-2 px-4">
+              <TbRotateClockwise2 className="animate-spin" size={25} />
+            </div>
+          ) : (
+            <button
+              type="submit"
+              className="bg-primary/90 min-w-40 whitespace-nowrap text-white lg:w-full font-medium rounded-lg hover:bg-transparent hover:text-primary border border-primary hover:cursor-pointer py-2 px-4"
+            >
+              Get A Free Quote
+            </button>
+          )}
         </form>
       </div>
     </div>

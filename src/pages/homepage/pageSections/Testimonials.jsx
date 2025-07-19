@@ -4,6 +4,7 @@ import benjaminAvatar from "/benjamin.png";
 import lillianAvatar from "/lillian.png";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
+import { FaCircleUser } from "react-icons/fa6";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
@@ -30,13 +31,14 @@ const Testimonials = () => {
       <div className="hidden md:grid md:grid-cols-3 gap-4 md:gap-1 lg:gap-10 md:absolute left-0 md:-bottom-2/4 lg:-bottom-1/3 sm:px-5 mt-5 md:mt-0">
         <div className="bg-[#849EAD] text-white rounded-2xl p-5">
           <div className="flex gap-3">
-            <img
+            {/* <img
               src={chrisAvatar}
               className="rounded-full h-12 w-12"
               alt="User Avatar"
-            />
+            /> */}
+            <FaCircleUser fill="#023b60" className="w-12 h-12" />
             <div>
-              <span className="font-bold">Christopher Carter</span>
+              <span className="font-bold">Melisa</span>
               <div className="flex text-yellow-500">
                 <FaStar />
                 <FaStar />
@@ -52,15 +54,17 @@ const Testimonials = () => {
             upselling.
           </p>
         </div>
+
         <div className="bg-[#849EAD] text-white rounded-2xl p-5">
           <div className="flex gap-3">
-            <img
+            {/* <img
               src={benjaminAvatar}
               className="rounded-full h-12 w-12"
               alt="User Avatar"
-            />
+            /> */}
+            <FaCircleUser fill="#023b60" className="w-12 h-12" />
             <div>
-              <span className="font-bold">Benjamin Foster</span>
+              <span className="font-bold">Hazel</span>
               <div className="flex text-yellow-500">
                 <FaStar />
                 <FaStar />
@@ -75,15 +79,17 @@ const Testimonials = () => {
             reliable filtration, this is the team to go with.
           </p>
         </div>
+
         <div className="bg-[#849EAD] text-white rounded-2xl p-5">
           <div className="flex gap-3">
-            <img
+            {/* <img
               src={lillianAvatar}
               className="rounded-full h-12 w-12"
               alt="User Avatar"
-            />
+            /> */}
+            <FaCircleUser fill="#023b60" className="w-12 h-12" />
             <div>
-              <span className="font-bold">Lillian Brooks</span>
+              <span className="font-bold">Ricardo</span>
               <div className="flex text-yellow-500">
                 <FaStar />
                 <FaStar />
@@ -127,7 +133,7 @@ const Testimonials = () => {
                   alt="User Avatar"
                 />
                 <div>
-                  <span className="font-bold">Christopher Carter</span>
+                  <span className="font-bold">Melisa</span>
                   <div className="flex text-yellow-500">
                     <FaStar />
                     <FaStar />
@@ -153,7 +159,7 @@ const Testimonials = () => {
                   alt="User Avatar"
                 />
                 <div>
-                  <span className="font-bold">Benjamin Foster</span>
+                  <span className="font-bold">Hazel</span>
                   <div className="flex text-yellow-500">
                     <FaStar />
                     <FaStar />
@@ -178,7 +184,7 @@ const Testimonials = () => {
                   alt="User Avatar"
                 />
                 <div>
-                  <span className="font-bold">Lillian Brooks</span>
+                  <span className="font-bold">Ricardo</span>
                   <div className="flex text-yellow-500">
                     <FaStar />
                     <FaStar />
