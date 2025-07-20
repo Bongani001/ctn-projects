@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { GoDotFill } from "react-icons/go";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="space-y-10 pt-17 mx-5 md:mx-20 mb-10">
+    <div className="space-y-10 pt-17 mx-5 md:mx-20 mb-10" data-aos="fade-up">
       {/* ABOUT US */}
       <div>
         <h2 className="text-xl sm:text-2xl font-semibold">About Us</h2>

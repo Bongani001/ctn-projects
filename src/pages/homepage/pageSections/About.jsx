@@ -1,5 +1,4 @@
 import React from "react";
-import ctnLogo from "/ctn-logo.svg";
 import labWorkers from "/two-lab-workers.png";
 
 const About = () => {
@@ -8,12 +7,7 @@ const About = () => {
       id="about"
       className="sm:grid grid-cols-2 sm:gap-5 justify-between px-5 md:px-20 my-30 scroll-mt-20"
     >
-      {/* <img
-        src={ctnLogo}
-        className="hidden sm:block min-w-50 w-[50%] place-self-center"
-        alt="CTN Projects logo"
-      /> */}
-      <div className="flex-1">
+      <div className="flex-1" data-aos="fade-left">
         <span className="text-2xl font-bold tex-center">
           About CTN Projects
         </span>
@@ -43,6 +37,7 @@ const About = () => {
         src={labWorkers}
         className="rounded-2xl flex-1 h-full sm:-order-1 object-cover mt-10 sm:mt-0"
         alt="Two Lab Workers"
+        data-aos="fade-right"
       />
     </div>
   );

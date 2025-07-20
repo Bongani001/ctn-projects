@@ -42,6 +42,7 @@ const Contact = () => {
     <div
       id="contact"
       className="grid sm:grid-cols-2 gap-10 pt-30 mx-5 sm:mx-20 mb-20"
+      data-aos="fade-right"
     >
       <Toaster position="top-center" />
       <div className="">

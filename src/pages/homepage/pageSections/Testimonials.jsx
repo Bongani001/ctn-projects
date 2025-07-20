@@ -28,7 +28,10 @@ const Testimonials = () => {
       </p>
 
       {/* DESKTOP VIEW */}
-      <div className="hidden md:grid md:grid-cols-3 gap-4 md:gap-1 lg:gap-10 md:absolute left-0 md:-bottom-2/4 lg:-bottom-1/3 sm:px-5 mt-5 md:mt-0">
+      <div
+        className="hidden md:grid md:grid-cols-3 gap-4 md:gap-1 lg:gap-10 md:absolute left-0 md:-bottom-2/4 lg:-bottom-1/3 sm:px-5 mt-5 md:mt-0"
+        data-aos="fade-up"
+      >
         <div className="bg-[#849EAD] text-white rounded-2xl p-5">
           <div className="flex gap-3">
             {/* <img
@@ -107,7 +110,7 @@ const Testimonials = () => {
       </div>
 
       {/* MOBILE VIEW CAROUSEL */}
-      <div className="md:hidden mt-5">
+      <div className="md:hidden mt-5" data-aos="fade-right">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

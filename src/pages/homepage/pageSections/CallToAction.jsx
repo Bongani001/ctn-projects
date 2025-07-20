@@ -9,8 +9,9 @@ const CallToAction = () => {
         src={homeAircon}
         className="w-full sm:w-[40%] rounded-2xl object-cover mt-10 sm:mt-0"
         alt="Aircon in a home"
+        data-aos="fade-right"
       />
-      <div className="pt-10 sm:px-24">
+      <div className="pt-10 sm:px-24" data-aos="fade-left">
         <h3 className="text-3xl font-extrabold mb-5">
           Still Searching For The Right Air Filters Or Lab Equipment?
         </h3>

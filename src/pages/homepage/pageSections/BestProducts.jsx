@@ -21,7 +21,10 @@ const BestProducts = () => {
 
       <div className="sm:col-span-2">
         {/* DESKTOP VIEW */}
-        <div className="hidden md:grid md:grid-cols-2 md:gap-5">
+        <div
+          className="hidden md:grid md:grid-cols-2 md:gap-5"
+          data-aos="fade-left"
+        >
           <ProductCard
             image={washableWireSupportedPanelFilter}
             title="Washable Wire-Supported Panel Filter"
@@ -38,7 +41,10 @@ const BestProducts = () => {
         </div>
 
         {/* MOBILE VIEW CAROUSEL */}
-        <div className="md:hidden flex gap-5 !overflow-x-auto no-scrollbar mt-5 ml-5">
+        <div
+          className="md:hidden flex gap-5 !overflow-x-auto no-scrollbar mt-5 ml-5"
+          data-aos="fade-left"
+        >
           <div>
             <ProductCard
               image={pocketFilter}

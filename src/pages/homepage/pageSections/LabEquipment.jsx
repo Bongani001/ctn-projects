@@ -10,7 +10,11 @@ const LabEquipment = () => {
         Laboratory Equipments
       </span>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-10">
+      <div
+        className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-10"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         {labEquipments?.map((equipment) => (
           <ProductCard
             key={equipment.id}

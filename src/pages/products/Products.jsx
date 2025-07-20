@@ -15,7 +15,7 @@ const Products = () => {
     <div className="pt-17">
       <div id="products" className="relative scroll-mt-12">
         {/* PRODUCT TABS */}
-        <div className="sticky top-18 bg-zinc-100 rounded-lg place-self-center space-x-5 px-4 py-2 mb-10 mt-5">
+        <div className="sticky top-18 bg-zinc-100 rounded-lg place-self-center space-x-5 px-4 py-2 mb-10 mt-5 z-10">
           <HashLink smooth to="#products">
             <span
               className={`${
@@ -42,7 +42,7 @@ const Products = () => {
 
         {/* FILTERS */}
         {productTab === "filters" && (
-          <div className="mx-5 sm:mx-20">
+          <div className="mx-5 sm:mx-20 -z-1" data-aos="fade-up">
             {/* PRIMARY AIR FILTERS */}
             <div className="mb-20">
               <h2 className="text-xl sm:text-2xl font-semibold mb-5">
@@ -98,7 +98,7 @@ const Products = () => {
 
         {/* LAB EQUIPMENT */}
         {productTab === "labEquipments" && (
-          <div className="mx-5 sm:mx-20">
+          <div className="mx-5 sm:mx-20 -z-1" data-aos="fade-up">
             <h2 className="text-2xl font-semibold mb-5">Lab Equipments</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
               {labEquipments?.map((equipment) => (

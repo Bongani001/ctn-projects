@@ -9,7 +9,7 @@ const AirFilters = () => {
 
   return (
     <div id="airFilters" className="relative px-5 md:px-20 mb-20">
-      <div className="sticky top-0 left-0 ">
+      <div className="sticky top-0 left-0 z-10">
         <span className="block text-xl sm:text-2xl text-center font-extrabold pb-10">
           Air Filters
         </span>
@@ -56,7 +56,11 @@ const AirFilters = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-10">
+      <div
+        className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-10 -z-1"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         {airFilters[airFiltersTab]?.map((airFilter) => (
           <ProductCard
             key={airFilter.id}
