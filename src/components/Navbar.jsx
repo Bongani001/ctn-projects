@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white/80 backdrop-blur-sm shadow fixed w-full flex items-center justify-between px-5 py-2 md:px-20 z-40">
+    <nav className="bg-white/80 backdrop-blur-sm shadow fixed w-screen flex items-center justify-between px-5 py-2 md:px-20 z-40">
       <Link to="/">
         <img src={ctnLogo} className="w-12 md:w-14" alt="CTN Projects logo" />
       </Link>
