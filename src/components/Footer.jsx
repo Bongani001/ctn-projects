@@ -28,10 +28,11 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <span className="text-lg font-semibold">ADDRESS</span>
-          <span>Unit 189, Palm Springs</span>
-          <span>35 Georgia Crescent</span>
-          <span>Cosmo City</span>
-          <span>2188</span>
+          <span>Pinmill Office Park</span>
+          <span>Block F, Ground Floor</span>
+          <span>164 Katherine Street</span>
+          <span>Sandton</span>
+          <span>2196</span>
         </div>
         <div className="flex flex-col">
           <span className="text-lg font-semibold">CONTACT DETAILS</span>
